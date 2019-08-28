@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/llBtn">
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:padding="16dp"
+                          android:gravity="center"
+                          android:id="@+id/llTop"
+                          android:orientation="vertical"
+                          android:background="@drawable/top_background">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/jobRequest"
+                          android:fontFamily="sans-serif-medium"
+                          android:textColor="@android:color/white"
+                          android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:id="@+id/profile_image"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:civ_border_overlay="true"
+                        android:src="@mipmap/ic_avatar"
+                        app:civ_border_width="0.5dp"
+                        app:civ_border_color="@android:color/transparent"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Michael Wilson"
+                          android:textColor="@android:color/white"
+                          android:fontFamily="sans-serif-medium"
+                          android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_below="@+id/llTop"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_height="wrap_content">
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="@string/msg"
+                          android:textColor="@color/colorText"
+                          android:fontFamily="sans-serif-medium"
+                          android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:textColor="@color/colorText"
+                          android:layout_height="wrap_content"
+                          android:text="@string/intro"
+                          android:layout_marginTop="16dp"
+                          android:fontFamily="sans-serif-light"
+                          android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/colorText"
+                          android:layout_marginTop="16dp"
+                          android:text="@string/brandName"
+                          android:fontFamily="sans-serif-medium"
+                          android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/colorText"
+                          android:text="@string/address"
+                          android:fontFamily="sans-serif-light"
+                          android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+            android:id="@+id/llBtn"
+            android:layout_alignParentBottom="true" android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:background="@drawable/btn_decline"
+                android:textColor="@android:color/white"
+                android:text="@string/btnDecline"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_accept"
+                android:textColor="@android:color/white"
+                android:layout_margin="8dp"
+                android:text="@string/btnAccept"/>
+    </LinearLayout>
+
+</RelativeLayout>

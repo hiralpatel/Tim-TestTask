@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TestTask</string>
+    <string name="msg">Message</string>
+    <string name="intro">Hi there,\nI would like to work as a Store Manager in the store:</string>
+    <string name="brandName">Starbucks</string>
+    <string name="address">361 S California Ave B1000, Palo Alto.</string>
+
+    <string name="btnDecline">Decline</string>
+    <string name="btnAccept">Accept</string>
+
+    <string name="jobRequest">JOB REQUEST</string>
+</resources>
